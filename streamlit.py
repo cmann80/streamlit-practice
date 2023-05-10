@@ -1,11 +1,5 @@
-"""
-My first app: practicing openAI input and output
-"""
-
 import streamlit as st
 import pandas as pd
-import openai
-
 
 input_text = None
 if 'output' not in st.session_state:
