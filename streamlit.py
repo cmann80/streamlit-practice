@@ -1,6 +1,4 @@
-"""
-My first app: practicing openAI input and output
-"""
+
 
 import streamlit as st
 import pandas as pd
