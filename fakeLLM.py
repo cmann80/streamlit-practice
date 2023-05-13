@@ -1,7 +1,12 @@
+import os
+from dotenv import load_dotenv
+
 from langchain.llms.fake import FakeListLLM
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
 from langchain.agents import AgentType
+
+load_dotenv()
 
 tools = load_tools(["python_repl"])
 

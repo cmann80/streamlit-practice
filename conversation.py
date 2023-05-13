@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import(
     AIMessage,
@@ -9,7 +11,13 @@ from langchain.prompts.chat import(
     SystemMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
+load_dotenv()
+
 chat = ChatOpenAI(temperature=0)
+
+
+
+
 
 batch_messages = [
     [

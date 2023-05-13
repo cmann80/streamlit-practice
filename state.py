@@ -1,3 +1,6 @@
+import os
+from dotenv import load_dotenv
+
 from langchain.prompts import(
     ChatPromptTemplate,
     MessagesPlaceholder,
@@ -7,6 +10,8 @@ from langchain.prompts import(
 from langchain.chains import ConversationChain
 from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
+
+load_dotenv()
 
 prompt = ChatPromptTemplate.from_messages([
     SystemMessagePromptTemplate.from_template("The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know."),
