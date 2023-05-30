@@ -27,7 +27,7 @@ def clear_chat() -> None:
     st.session_state.past = []
     st.session_state.messages = []
     st.session_state.user_text = ""
- 
+
 # helper function to show text input
 def show_text_input() -> None:
     st.text_area(label=st.session_state.chat_placeholder, value = st.session_state.user_text, key = "user_text")
