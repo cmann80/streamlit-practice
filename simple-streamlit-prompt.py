@@ -7,11 +7,11 @@ load_dotenv()
 
 llm = OpenAI(temperature=0.9)
 
-text = st.text_area("enter text")
-submit = st.button("generate response")
+text = st.text_area("Enter Text")
+submit = st.button("Generate Response")
 
 
 if submit:
-    st.header("response")
-    with st.spinner(text = "please wait"):
+    st.header("Response")
+    with st.spinner(text = "Please Wait"):
         st.write(llm(text))
